@@ -136,38 +136,38 @@ console.log(rangeTest.validate(-2)); //работа метода validate
 
 //3. Сделайте функцию, которая определяет, есть в массиве заданный элемент или нет.
 
-// const arr = [2, 434, 345, 43, 6, 678, 67, 4546, 456, 45, 456]
+const arr = [2, 434, 345, 43, 6, 678, 67, 4546, 456, 45, 456]
 
-// function elementsFind(arr, elem) {
-// 	for (let i = 0; i < arr.length; i++) {
-// 		if (arr[i] === elem) {
-// 			return true;
-// 		}
-// 	}
-// 	return false;
-// }
+function elementsFind(arr, elem) {
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] === elem) {
+			return true;
+		}
+	}
+	return false;
+}
 
-// console.log(elementsFind(arr, 6));
+console.log(elementsFind(arr, 6));
 
 // 4. Дано число.Сложите его цифры.Если сумма получилась более 9 - ти, опять сложите его цифры.И так, пока сумма не станет однозначным числом(9 и менее).
 
-// function getNumber(num) {
-// 	let summ = 0;
-// 	num += '';
-// 	for (let i = 0; i < num.length; i++) {
-// 		summ += +num[i];
-// 	}
-// 	if (num <= 9) {
-// 		return num;
-// 	} else {
-// 		return +getNumber(summ);
-// 	}
-// }
+function getNumber(num) {
+	let summ = 0;
+	num += '';
+	for (let i = 0; i < num.length; i++) {
+		summ += +num[i];
+	}
+	if (num <= 9) {
+		return num;
+	} else {
+		return +getNumber(summ);
+	}
+}
 
 // 5.  Напишите функцию, которая возвращает массив состоящий только из уникальных элементов из каждого массива
 
-// let = [2, 4, 43, 5, 657, 6, 87, 45646, 456, 2342, 1, 2,];
+let = [2, 4, 43, 5, 657, 6, 87, 45646, 456, 2342, 1, 2,];
 
-// function unique(array) {
-// 	return [...new Set(array)];
-// }
+function unique(array) {
+	return [...new Set(array)];
+}
